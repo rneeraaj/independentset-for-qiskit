@@ -1,0 +1,101 @@
+# Benchmark Reporting Sheet
+
+**Problem:**  
+sparrow_final1 (20250116_cy388xb01rbg008hxge0_sparrow_final1.json)
+
+**Submitter:**  
+Neeraj
+
+**Date:**  
+2025-05-17
+
+---
+
+**Reference:**  
+[https://github.com/yourusername/yourrepo](https://github.com/yourusername/yourrepo)
+
+---
+
+**Best Objective Value:**  
+27
+
+**Optimality Bound:**  
+N/A (QAOA, hardware run)
+
+**Modeling Approach:**  
+QUBO formulation for Maximum Independent Set:  
+- Each node is a binary variable (0/1: not in/in the set)  
+- Objective: maximize sum of selected nodes  
+- Constraints: no two adjacent nodes both selected (penalized in QUBO)
+
+**# Decision Variables:**  
+52
+
+**# Binary Variables:**  
+52
+
+**# Integer Variables:**  
+0
+
+**# Continuous Variables:**  
+0
+
+**Decision Variables Range:**  
+0 or 1
+
+**# Non-Zero Coefficients:**  
+52 + 2 × number of edges
+
+**Coefficients Type:**  
+Integer
+
+**Coefficients Range:**  
+Typically -1, 1, and penalty values
+
+---
+
+**Workflow:**  
+1. Prepare graph instance  
+2. Formulate QUBO  
+3. Run QAOA on quantum hardware  
+4. Collect bitstring results  
+5. Extract largest independent set from measured bitstrings
+
+**Algorithm Type:**  
+Stochastic (QAOA)
+
+**# Runs:**  
+1
+
+**# Feasible Runs:**  
+1
+
+**# Successful Runs:**  
+1
+
+**Success Threshold (ϵ):**  
+N/A
+
+---
+
+**Total Runtime:**  
+N/A
+
+**CPU Runtime:**  
+N/A
+
+**GPU Runtime:**  
+N/A
+
+**QPU Runtime:**  
+N/A
+
+**Other HW Runtime:**  
+N/A
+
+---
+
+*Additional information:*  
+- Raw results in `20250116_cy388xb01rbg008hxge0_sparrow_final1.json`  
+- **Best solution (node indices):**  
+  `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]`
